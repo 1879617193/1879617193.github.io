@@ -209,7 +209,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-03-18 12:40:36 / 修改时间：13:45:58" itemprop="dateCreated datePublished" datetime="2022-03-18T12:40:36+08:00">2022-03-18</time>
+      <time title="创建时间：2022-03-18 12:40:36 / 修改时间：14:05:53" itemprop="dateCreated datePublished" datetime="2022-03-18T12:40:36+08:00">2022-03-18</time>
     </span>
 
   
@@ -219,14 +219,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.5k</span>
+      <span>5.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
+      <span>5 分钟</span>
     </span>
 </div>
 
@@ -237,37 +237,72 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="c语言程序设计"><a href="#c语言程序设计" class="headerlink" title="c语言程序设计"></a>c语言程序设计</h1><h3 id="1-第一个程序设计"><a href="#1-第一个程序设计" class="headerlink" title="1.第一个程序设计"></a>1.第一个程序设计</h3><p><img src="/2022/03/18/c%E8%AF%AD%E8%A8%801/3.png"></p>
-<p>解释：</p>
-<p>&#x2F;&#x2F;main函数是程序的入口</p>
-<p>&#x2F;&#x2F;一个工程中main函数有且仅有一个</p>
-<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h2><p>​                         类型                            字节</p>
-<p>char            &#x2F;&#x2F;字符数据类型                   1               %d–打印整型</p>
-<p>short          &#x2F;&#x2F;短整型                               2               %s–打印字符串</p>
-<p>int               &#x2F;&#x2F;整形                                  4                %f–打印浮点数字</p>
-<p>long             &#x2F;&#x2F;长整型                             4                %p–打印地址的形式</p>
-<p>long long     &#x2F;&#x2F;更长的整形                     8                %c–打印字符</p>
-<p>float             &#x2F;&#x2F;单精度浮点数                 4</p>
-<p>double        &#x2F;&#x2F;双精度浮点数                  8</p>
+          <h1 id="c语言程序设计"><a href="#c语言程序设计" class="headerlink" title="c语言程序设计"></a>c语言程序设计</h1><h1 id="1-第一个程序设计"><a href="#1-第一个程序设计" class="headerlink" title="1.第一个程序设计"></a>1.第一个程序设计</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;hello bit\n&quot;);</span><br><span class="line"></span><br><span class="line">   printf(&quot;he he\n&quot;);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">解释：</span><br><span class="line"></span><br><span class="line">//main函数是程序的入口</span><br><span class="line"></span><br><span class="line">//一个工程中main函数有且仅有一个</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h1><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>字节</th>
+<th>打印字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char</td>
+<td>1</td>
+<td>%d–打印整型</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2</td>
+<td>%s–打印字符串</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4</td>
+<td>%f–打印浮点数字</td>
+</tr>
+<tr>
+<td>long</td>
+<td>4</td>
+<td>%p–打印地址的形式</td>
+</tr>
+<tr>
+<td>long long</td>
+<td>8</td>
+<td>%c–打印字符</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>double</td>
+<td>8</td>
+<td></td>
+</tr>
+</tbody></table>
 <ul>
-<li><h3 id="数据类型的大小"><a href="#数据类型的大小" class="headerlink" title="数据类型的大小"></a>数据类型的大小</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">\#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(char));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(short));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(int));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long long));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(float));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(double));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long double));</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><h2 id="数据类型的大小"><a href="#数据类型的大小" class="headerlink" title="数据类型的大小"></a>数据类型的大小</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">\#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(char));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(short));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(int));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long long));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(float));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(double));</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, sizeof(long double));</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="3-变量、常量"><a href="#3-变量、常量" class="headerlink" title="3.变量、常量"></a>3.变量、常量</h2><p>生活中的有些值是不变的（比如：圆周率，性别，身份证号码，血型等等）</p>
+<h1 id="3-变量、常量"><a href="#3-变量、常量" class="headerlink" title="3.变量、常量"></a>3.变量、常量</h1><p>生活中的有些值是不变的（比如：圆周率，性别，身份证号码，血型等等）</p>
 <p>有些值是可变的（比如：年龄，体重，薪资）</p>
 <p>不变的值，C语言中用<strong>常量</strong>的概念来表示，变得值C语言中用<strong>变量</strong>来表示</p>
 </li>
 <li><p>局部变量</p>
 </li>
 <li><p>全局变量</p>
-<p><img src="/2022/03/18/c%E8%AF%AD%E8%A8%801/1.png"></p>
-</li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">- \#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">  int global = 2019;//全局变量</span><br><span class="line"></span><br><span class="line">  int main()</span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line"></span><br><span class="line">     int local = 2018;//局部变量</span><br><span class="line"></span><br><span class="line">     //下面定义的global会不会有问题？</span><br><span class="line"></span><br><span class="line">     int global = 2020;//局部变量</span><br><span class="line"></span><br><span class="line">     printf(&quot;global = %d\n&quot;, global);</span><br><span class="line"></span><br><span class="line">     return 0; </span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ul>
 <p><strong>总结：</strong></p>
 <p>上面的局部变量global变量的定义其实没有什么问题的！</p>
 <p>当局部变量和全局变量同名的时候，局部变量优先使用。</p>
-<h3 id="3-4-变量的作用域和生命周期"><a href="#3-4-变量的作用域和生命周期" class="headerlink" title="3.4 变量的作用域和生命周期"></a><strong>3.4</strong> <strong>变量的作用域和生命周期</strong></h3><p>作用域</p>
+<h2 id="3-4-变量的作用域和生命周期"><a href="#3-4-变量的作用域和生命周期" class="headerlink" title="3.4 变量的作用域和生命周期"></a><strong>3.4</strong> <strong>变量的作用域和生命周期</strong></h2><p>作用域</p>
 <p>作用域（scope）是程序设计概念，通常来说，一段程序代码中所用到的名字并不总是有效&#x2F;可用</p>
 <p>的</p>
 <p>而限定这个名字的可用性的代码范围就是这个名字的作用域。</p>
@@ -283,7 +318,7 @@
 <li><p>局部变量的生命周期是：进入作用域生命周期开始，出作用域生命周期结束。</p>
 </li>
 <li><p>全局变量的生命周期是：整个程序的生命周期。</p>
-<h3 id="3-5-常量"><a href="#3-5-常量" class="headerlink" title="3.5 常量"></a><strong>3.5</strong> <strong>常量</strong></h3></li>
+<h2 id="3-5-常量"><a href="#3-5-常量" class="headerlink" title="3.5 常量"></a><strong>3.5</strong> <strong>常量</strong></h2></li>
 </ol>
 <p>C语言中的常量和变量的定义的形式有所差异。</p>
 <p>C语言中的常量分为以下以下几种：</p>
@@ -295,7 +330,7 @@
 <li><p>#define 定义的标识符常量</p>
 </li>
 <li><p>枚举常量</p>
-<h2 id="4-字符串-转义字符-注释"><a href="#4-字符串-转义字符-注释" class="headerlink" title="4.字符串+转义字符+注释"></a>4.字符串+转义字符+注释</h2><p><code>&quot;hello bit.\n&quot;</code></p>
+<h1 id="4-字符串-转义字符-注释"><a href="#4-字符串-转义字符-注释" class="headerlink" title="4.字符串+转义字符+注释"></a>4.字符串+转义字符+注释</h1><p><code>&quot;hello bit.\n&quot;</code></p>
 </li>
 </ul>
 <p>这种由双引号（Double Quote）引起来的一串字符称为字符串字面值（String Literal），或者简称字符</p>
@@ -305,8 +340,7 @@
 <p>代码如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">//下面代码，打印结果是什么？为什么？（突出&#x27;\0&#x27;的重要性）</span><br><span class="line"></span><br><span class="line">`int main()`</span><br><span class="line"></span><br><span class="line">`&#123;`</span><br><span class="line"></span><br><span class="line">   `char arr1[] = &quot;bit&quot;;`</span><br><span class="line"></span><br><span class="line">   `char arr2[] = &#123;&#x27;b&#x27;, &#x27;i&#x27;, &#x27;t&#x27;&#125;;`</span><br><span class="line"></span><br><span class="line">   `char arr3[] = &#123;&#x27;b&#x27;, &#x27;i&#x27;, &#x27;t&#x27;， &#x27;\0&#x27;&#125;;`</span><br><span class="line"></span><br><span class="line">   `printf(&quot;%s\n&quot;, arr1);`</span><br><span class="line"></span><br><span class="line">   `printf(&quot;%s\n&quot;, arr2);`</span><br><span class="line"></span><br><span class="line">   `printf(&quot;%s\n&quot;, arr3);`</span><br><span class="line"></span><br><span class="line">   `return 0;` </span><br><span class="line"></span><br><span class="line">`&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>4.2</strong> <strong>转义字符</strong></p>
-<table>
+<h2 id="4-2-转义字符"><a href="#4-2-转义字符" class="headerlink" title="4.2 转义字符"></a><strong>4.2</strong> <strong>转义字符</strong></h2><table>
 <thead>
 <tr>
 <th><strong>转义字符</strong></th>
@@ -366,30 +400,58 @@
 <td>dd表示2个十六进制数字。 如： \x30 0</td>
 </tr>
 </tbody></table>
-<p><img src="/2022/03/18/c%E8%AF%AD%E8%A8%801/2.png"></p>
-<h2 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h2><ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   //问题1：在屏幕上打印一个单引号&#x27;，怎么做？</span><br><span class="line"></span><br><span class="line">   //问题2：在屏幕上打印一个字符串，字符串的内容是一个双引号“，怎么做？</span><br><span class="line"></span><br><span class="line">   printf(&quot;%c\n&quot;, &#x27;\&#x27;&#x27;);</span><br><span class="line"></span><br><span class="line">   printf(&quot;%s\n&quot;, &quot;\&quot;&quot;);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h1><ul>
 <li>加法函数Add</li>
 </ul>
-<p><img src="/2022/03/18/c%E8%AF%AD%E8%A8%801/4.png"></p>
-<p>函数的特点就是简化代码，代码复用。</p>
-<h2 id="6-数组"><a href="#6-数组" class="headerlink" title="6. 数组"></a><strong>6.</strong> <strong>数组</strong></h2><p>要存储1-10的数字，怎么存储？</p>
-<p>C语言中给了数组的定义：一组相同类型元素的集合</p>
-<p><strong>6.1</strong> <strong>数组定义</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`int arr[10] = &#123;1,2,3,4,5,6,7,8,9,10&#125;;//定义一个整形数组，最多放10个元素`</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int Add(int x, int y) </span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">  int z = x+y;</span><br><span class="line"></span><br><span class="line">  return z; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   int num1 = 0;</span><br><span class="line"></span><br><span class="line">  int num2 = 0;</span><br><span class="line"></span><br><span class="line">   int sum = 0;</span><br><span class="line"></span><br><span class="line">   printf(&quot;输入两个操作数:&gt;&quot;);</span><br><span class="line"></span><br><span class="line">   scanf(&quot;%d %d&quot;, &amp;num1, &amp;num2);</span><br><span class="line"></span><br><span class="line">   sum = Add(num1, num2);</span><br><span class="line"></span><br><span class="line">   printf(&quot;sum = %d\n&quot;, sum);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>6.2</strong> <strong>数组的下标</strong></p>
-<p>C语言规定：数组的每个元素都有一个下标，下标是从0开始的。</p>
+<p>函数的特点就是简化代码，代码复用。</p>
+<h1 id="6-数组"><a href="#6-数组" class="headerlink" title="6. 数组"></a><strong>6.</strong> <strong>数组</strong></h1><p>要存储1-10的数字，怎么存储？</p>
+<p>C语言中给了数组的定义：一组相同类型元素的集合</p>
+<h2 id="6-1-数组定义"><a href="#6-1-数组定义" class="headerlink" title="6.1 数组定义"></a><strong>6.1</strong> <strong>数组定义</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`int arr[10] = &#123;1,2,3,4,5,6,7,8,9,10&#125;;//定义一个整形数组，最多放10个元素`</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2-数组的下标"><a href="#6-2-数组的下标" class="headerlink" title="6.2 数组的下标"></a><strong>6.2</strong> <strong>数组的下标</strong></h2><p>C语言规定：数组的每个元素都有一个下标，下标是从0开始的。</p>
 <p>数组可以通过下标来访问的。</p>
 <p>比如:</p>
 <p><code>int arr[10] = &#123;0&#125;;</code></p>
 <p><code>//如果数组10个元素，下标的范围是0-9</code></p>
-<p><img src="/2022/03/18/c%E8%AF%AD%E8%A8%801/5.png"></p>
-<p><strong>6.3</strong> <strong>数组的使用</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">`#include &lt;stdio.h&gt;`</span><br><span class="line"></span><br><span class="line">`int main()`</span><br><span class="line"></span><br><span class="line">`&#123;`</span><br><span class="line"></span><br><span class="line"> `int i = 0;`</span><br><span class="line"></span><br><span class="line"> `int arr[10] = &#123;1,2,3,4,5,6,7,8,9,10&#125;;`</span><br><span class="line"></span><br><span class="line"> `for(i=0; i&lt;10; i++)`</span><br><span class="line"></span><br><span class="line"> `&#123;`</span><br><span class="line"></span><br><span class="line">​    `printf(&quot;%d &quot;, arr[i]);`</span><br><span class="line"></span><br><span class="line"> `&#125;`</span><br><span class="line"></span><br><span class="line"> `printf(&quot;\n&quot;);`</span><br><span class="line"></span><br><span class="line">   `return 0;` </span><br><span class="line"></span><br><span class="line">`&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>int arr[9]</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>下标</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<h2 id="6-3-数组的使用"><a href="#6-3-数组的使用" class="headerlink" title="6.3 数组的使用"></a><strong>6.3</strong> <strong>数组的使用</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">`#include &lt;stdio.h&gt;`</span><br><span class="line"></span><br><span class="line">`int main()`</span><br><span class="line"></span><br><span class="line">`&#123;`</span><br><span class="line"></span><br><span class="line"> `int i = 0;`</span><br><span class="line"></span><br><span class="line"> `int arr[10] = &#123;1,2,3,4,5,6,7,8,9,10&#125;;`</span><br><span class="line"></span><br><span class="line"> `for(i=0; i&lt;10; i++)`</span><br><span class="line"></span><br><span class="line"> `&#123;`</span><br><span class="line"></span><br><span class="line">​    `printf(&quot;%d &quot;, arr[i]);`</span><br><span class="line"></span><br><span class="line"> `&#125;`</span><br><span class="line"></span><br><span class="line"> `printf(&quot;\n&quot;);`</span><br><span class="line"></span><br><span class="line">   `return 0;` </span><br><span class="line"></span><br><span class="line">`&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="7-操作符"><a href="#7-操作符" class="headerlink" title="7.操作符"></a>7.<strong>操作符</strong></h2><p>算术操作符</p>
+<h1 id="7-操作符"><a href="#7-操作符" class="headerlink" title="7.操作符"></a>7.<strong>操作符</strong></h1><p>算术操作符</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+   -    *      /</span><br></pre></td></tr></table></figure>
 
 <p>移位操作符</p>
@@ -421,17 +483,15 @@
 
 
 
-<h2 id="8-常见关键字"><a href="#8-常见关键字" class="headerlink" title="8.常见关键字"></a>8.<strong>常见关键字</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">auto  break  case  char  const  continue  default  do  double else  enum  </span><br><span class="line"></span><br><span class="line">extern float  for  goto  if  int  long  register   return  short  signed</span><br><span class="line"></span><br><span class="line">sizeof  static struct  switch  typedef union  unsigned  void  volatile  while</span><br></pre></td></tr></table></figure>
+<h1 id="8-常见关键字"><a href="#8-常见关键字" class="headerlink" title="8.常见关键字"></a>8.<strong>常见关键字</strong></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">auto  break  case  char  const  continue  default  do  double else  enum  </span><br><span class="line"></span><br><span class="line">extern float  for  goto  if  int  long  register   return  short  signed</span><br><span class="line"></span><br><span class="line">sizeof  static struct  switch  typedef union  unsigned  void  volatile  while</span><br></pre></td></tr></table></figure>
 
-<p><strong>8.1关键字 typedef</strong></p>
-<ul>
+<h2 id="8-1关键字-typedef"><a href="#8-1关键字-typedef" class="headerlink" title="8.1关键字 typedef"></a><strong>8.1关键字 typedef</strong></h2><ul>
 <li>typedef 顾名思义是类型定义，这里应该理解为类型重命名。</li>
 </ul>
 <p>比如：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//将unsigned int 重命名为uint_32, 所以uint_32也是一个类型名</span><br><span class="line"></span><br><span class="line">typedef unsigned int uint_32;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   //观察num1和num2,这两个变量的类型是一样的</span><br><span class="line"></span><br><span class="line">   unsigned int num1 = 0;</span><br><span class="line"></span><br><span class="line">   uint_32 num2 = 0;</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>8.2关键字</strong>static****</p>
-<p>在C语言中：</p>
+<h2 id="8-2关键字static"><a href="#8-2关键字static" class="headerlink" title="8.2关键字static****"></a><strong>8.2关键字</strong>static****</h2><p>在C语言中：</p>
 <p>static是用来修饰变量和函数的</p>
 <p>\1. 修饰局部变量-称为静态局部变量</p>
 <p>\2. 修饰全局变量-称为静态全局变量</p>
@@ -442,15 +502,13 @@
 <p>结论：</p>
 <p>static修饰局部变量改变了变量的生命周期</p>
 <p>让静态局部变量出了作用域依然存在，到程序结束，生命周期才结束。</p>
-<p>**8.3 <strong>修饰全局变量</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">//代码1</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">int g_val = 2018;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, g_val);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码2</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">static int g_val = 2018;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, g_val);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="8-3-修饰全局变量"><a href="#8-3-修饰全局变量" class="headerlink" title="**8.3 修饰全局变量"></a>**8.3 <strong>修饰全局变量</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">//代码1</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">int g_val = 2018;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, g_val);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码2</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">static int g_val = 2018;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, g_val);</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>代码1正常，代码2在编译的时候会出现连接性错误。</p>
 <p>结论：</p>
 <p>一个全局变量被static修饰，使得这个全局变量只能在本源文件内使用，不能在其他源文件内使</p>
 <p>用。</p>
-<p><strong>8.4修饰函数</strong></p>
-<p>[</p>
+<h2 id="8-4修饰函数"><a href="#8-4修饰函数" class="headerlink" title="8.4修饰函数"></a><strong>8.4修饰函数</strong></h2><p>[</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">//代码1</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">int Add(int x, int y) </span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   return c+y; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, Add(2, 3));</span><br><span class="line"></span><br><span class="line">   return 0;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//代码2</span><br><span class="line"></span><br><span class="line">//add.c</span><br><span class="line"></span><br><span class="line">static int Add(int x, int y) </span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   return c+y; </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//test.c</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">   printf(&quot;%d\n&quot;, Add(2, 3));</span><br><span class="line"></span><br><span class="line">   return 0; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>代码1正常，代码2在编译的时候会出现连接性错误.</p>
@@ -594,7 +652,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
