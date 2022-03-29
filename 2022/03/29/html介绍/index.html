@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1.HTML介绍1.网页1.1什么是 HTMLHTML指的是超文本标记语言，它是用来描述网页的一种语言。 HTML不是一种编程语言，而是一种标记语言 标记语言是一套标记标签。 所谓超文本，有两层含义： 1.它可以加入图片，声音，动画，多媒体等内容（超越了文本限制）。 2.它还可以从一个文件跳转到另一个文件，与世界各地网页连接。 1.2网页的形成网页是由网页元素组成的，这些元素是利用html标签描述">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html介绍">
+<meta property="og:url" content="http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/index.html">
+<meta property="og:site_name" content="一人之下">
+<meta property="og:description" content="1.HTML介绍1.网页1.1什么是 HTMLHTML指的是超文本标记语言，它是用来描述网页的一种语言。 HTML不是一种编程语言，而是一种标记语言 标记语言是一套标记标签。 所谓超文本，有两层含义： 1.它可以加入图片，声音，动画，多媒体等内容（超越了文本限制）。 2.它还可以从一个文件跳转到另一个文件，与世界各地网页连接。 1.2网页的形成网页是由网页元素组成的，这些元素是利用html标签描述">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/%E6%A0%87%E7%AD%BE%E4%BB%8B%E7%BB%8D.PNG">
+<meta property="article:published_time" content="2022-03-29T13:05:59.000Z">
+<meta property="article:modified_time" content="2022-03-29T14:51:33.850Z">
+<meta property="article:author" content="Mr.普">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/%E6%A0%87%E7%AD%BE%E4%BB%8B%E7%BB%8D.PNG">
+
+
+<link rel="canonical" href="http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/","path":"2022/03/29/html介绍/","title":"html介绍"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>html介绍 | 一人之下</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">一人之下</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">welcome</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-HTML%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">1.HTML介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%BD%91%E9%A1%B5"><span class="nav-number">1.1.</span> <span class="nav-text">1.网页</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1%E4%BB%80%E4%B9%88%E6%98%AF-HTML"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1什么是 HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2%E7%BD%91%E9%A1%B5%E7%9A%84%E5%BD%A2%E6%88%90"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2网页的形成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3%E7%BD%91%E9%A1%B5%E6%80%BB%E7%BB%93"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3网页总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">2.常用浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1浏览器内核</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-web%E6%A0%87%E5%87%86"><span class="nav-number">1.3.</span> <span class="nav-text">3.web标准</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1web%E6%A0%87%E5%87%86%E7%9A%84%E6%9E%84%E6%88%90"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1web标准的构成</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-HTML%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83"><span class="nav-number">2.</span> <span class="nav-text">2.HTML语法规范</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-number">2.1.</span> <span class="nav-text">1.基本语法概述</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%A0%87%E7%AD%BE%E5%85%B3%E7%B3%BB"><span class="nav-number">3.1.</span> <span class="nav-text">2.标签关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%AC%AC%E4%B8%80%E4%B8%AAHTML%E7%BD%91%E9%A1%B5"><span class="nav-number">3.2.</span> <span class="nav-text">3.第一个HTML网页</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr.普"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Mr.普</p>
+  <div class="site-description" itemprop="description">从来如此，便对吗？</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button site-overview-item animated">
+    <button class="js-gitter-toggle-chat-button"><i class="fa fa-comment"></i>
+      Chat
+    </button>
+  </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/1879617193" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;1879617193" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:1879617193@qq.com" title="E-Mail → mailto:1879617193@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/1879617193" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/29/html%E4%BB%8B%E7%BB%8D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mr.普">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一人之下">
+      <meta itemprop="description" content="从来如此，便对吗？">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="html介绍 | 一人之下">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          html介绍
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-03-29 21:05:59 / 修改时间：22:51:33" itemprop="dateCreated datePublished" datetime="2022-03-29T21:05:59+08:00">2022-03-29</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="1-HTML介绍"><a href="#1-HTML介绍" class="headerlink" title="1.HTML介绍"></a>1.HTML介绍</h1><h2 id="1-网页"><a href="#1-网页" class="headerlink" title="1.网页"></a>1.网页</h2><h3 id="1-1什么是-HTML"><a href="#1-1什么是-HTML" class="headerlink" title="1.1什么是 HTML"></a>1.1什么是 HTML</h3><p>HTML指的是超文本标记语言，它是用来描述网页的一种语言。</p>
+<p>HTML不是一种编程语言，而是一种标记语言</p>
+<p>标记语言是一套标记标签。</p>
+<p>所谓超文本，有两层含义：</p>
+<p>1.它可以加入图片，声音，动画，多媒体等内容（超越了文本限制）。</p>
+<p>2.它还可以从一个文件跳转到另一个文件，与世界各地网页连接。</p>
+<h3 id="1-2网页的形成"><a href="#1-2网页的形成" class="headerlink" title="1.2网页的形成"></a>1.2网页的形成</h3><p>网页是由网页元素组成的，这些元素是利用html标签描述出来，然后通过浏览器解析来显示给用户的。</p>
+<h3 id="1-3网页总结"><a href="#1-3网页总结" class="headerlink" title="1.3网页总结"></a>1.3网页总结</h3><p>网页是图片，链接，文字，声音，视频等元素组成，就是一个html文件（后缀为html）</p>
+<h2 id="2-常用浏览器"><a href="#2-常用浏览器" class="headerlink" title="2.常用浏览器"></a>2.常用浏览器</h2><h3 id="2-1浏览器内核"><a href="#2-1浏览器内核" class="headerlink" title="2.1浏览器内核"></a>2.1浏览器内核</h3><p>浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<h2 id="3-web标准"><a href="#3-web标准" class="headerlink" title="3.web标准"></a>3.web标准</h2><h3 id="3-1web标准的构成"><a href="#3-1web标准的构成" class="headerlink" title="3.1web标准的构成"></a>3.1web标准的构成</h3><p>主要包括<u>结构</u>，<u>表现</u>和<u>行为</u>三个方面。</p>
+<table>
+<thead>
+<tr>
+<th>标准</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>结构</td>
+<td>结构用于对网页元素进行整理和分类，现阶段主要学的是html</td>
+</tr>
+<tr>
+<td>表现</td>
+<td>表现用于设置网页元素的版式，颜色，大小等外观样式，主要指的是css</td>
+</tr>
+<tr>
+<td>行为</td>
+<td>行为是指网页模型的定义及交互的编写，现阶段主要学的是javascript</td>
+</tr>
+</tbody></table>
+<p>web标准提出的最佳体验方案：结构，样式，行为相分离</p>
+<p>简单理解：结构写道html文件中，表现写到CSS文件中，行为写到javascript文件中</p>
+<h1 id="2-HTML语法规范"><a href="#2-HTML语法规范" class="headerlink" title="2.HTML语法规范"></a>2.HTML语法规范</h1><h2 id="1-基本语法概述"><a href="#1-基本语法概述" class="headerlink" title="1.基本语法概述"></a>1.基本语法概述</h2><ul>
+<li><p>HTML标签是由尖括号包围的关键词，例如：<code>&lt;html&gt;</code>   </p>
+</li>
+<li><p>HTML标签通常是成对出现的例如：<code>&lt;html&gt;</code>-开始       <code>&lt;/html&gt;</code>-结束，我们称为双标签</p>
+</li>
+<li><p>有些特殊的标签必须是单个标签（极少情况），例如：<code>&lt;br/&gt;</code>我们称为单标签</p>
+</li>
+</ul>
+<h1 id><a href="#" class="headerlink" title></a></h1><h2 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2.标签关系"></a>2.标签关系</h2><p>双标签关系可以分为两类：包含关系和并列关系。</p>
+<ul>
+<li>包含关系</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">title</span>&gt;</span>  <span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>并列关系</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span>&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>       //父亲</span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span>  //孩子</span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span>  //兄弟关系</span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-第一个HTML网页"><a href="#3-第一个HTML网页" class="headerlink" title="3.第一个HTML网页"></a>3.第一个HTML网页</h2><p>每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写。</p>
+<p>HTML页面也称为HTML文档</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">           云南农业大学</span><br><span class="line">         <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>定义</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><html></html></td>
+<td>HTML标签</td>
+<td>页面中最大的标签，我们称为跟标签</td>
+</tr>
+<tr>
+<td><head></head></td>
+<td>文档的头部</td>
+<td>注意在head标签中我们必须要设置的标签是title</td>
+</tr>
+<tr>
+<td><titile></titile></td>
+<td>文档的标题</td>
+<td>让页面拥有一个属于自己的网页标题</td>
+</tr>
+<tr>
+<td><body></body></td>
+<td>文档的主题</td>
+<td>元素包含文档的所有内容，页面内容基本都是放到body里面的</td>
+</tr>
+</tbody></table>
+<p><img src="/2022/03/29/html%E4%BB%8B%E7%BB%8D/%E6%A0%87%E7%AD%BE%E4%BB%8B%E7%BB%8D.PNG" alt="标签详情介绍"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/18/linux/" rel="prev" title="linux">
+                  <i class="fa fa-chevron-left"></i> linux
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.普</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">7k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">7 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script class="next-config" data-name="chatra" type="application/json">{"enable":true,"async":true,"id":"\u003cChatraID>"}</script>
+<script src="/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
